@@ -2,96 +2,76 @@
 <html>
 <head>
     <title>Campus Connect | Academic Support</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="
-    margin:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #ffcc00, #f7931e);
-    color:#003366;
-">
+<body>
 
-<!-- HEADER -->
-<div style="text-align:center; padding:50px 20px;">
-    <h1 style="font-size:50px; margin:0;">Campus Connect</h1>
-    <p style="font-size:20px;">Your Academic Success Partner</p>
-</div>
+<header>
+    <h1>Campus Connect</h1>
+    <p>Your Academic Success Partner</p>
+</header>
 
-<!-- HERO MESSAGE -->
-<div style="
-    background-color:white;
-    max-width:900px;
-    margin:auto;
-    padding:40px;
-    border-radius:10px;
-    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
-">
+<div class="container">
 
-    <h2 style="text-align:center;">Struggling With Assignments?</h2>
 
-    <div style="
-        background-color:#e53935;
-        color:white;
-        padding:20px;
-        border-radius:8px;
-        text-align:center;
-        font-size:22px;
-        margin-bottom:30px;
-    ">
-        Lost in Reports & Formatting?
+    <div class="hero-box">
+        Struggling With Assignments?
     </div>
 
-    <p style="text-align:center; font-size:18px;">
-        Campus Connect is your trusted academic guide for university students.
+    <p>
+        Campus Connect provides professional academic guidance and support for university students.
     </p>
-<div style="text-align:center; margin-bottom:20px;">
-    <a href="services.html" 
-       style="color:#003366; font-weight:bold; font-size:18px;">
-       View Our Services
-    </a>
-</div>
 
-    <!-- Buttons -->
-    <div style="text-align:center; margin-top:30px;">
-
-        <a href="https://wa.me/36205105843"
-           style="
-            background-color:#25D366;
-            color:white;
-            padding:15px 25px;
-            text-decoration:none;
-            font-size:18px;
-            border-radius:6px;
-            margin-right:10px;
-           ">
-            WhatsApp Us
-        </a>
-
-        <a href="https://instagram.com/campusconnect75"
-           style="
-            background-color:#E1306C;
-            color:white;
-            padding:15px 25px;
-            text-decoration:none;
-            font-size:18px;
-            border-radius:6px;
-           ">
-            Visit Instagram
-        </a>
-
+    <div style="text-align:center;">
+        <a href="services.html" class="button primary">View Services</a>
+        <a href="https://wa.me/36205105843" class="button whatsapp">WhatsApp</a>
+        <a href="https://instagram.com/campusconnect75" class="button instagram">Instagram</a>
     </div>
 
+    <hr>
+
+    <h2>What Students Say</h2>
+
+    <div class="testimonial">
+        "Campus Connect helped me complete my thesis on time. Highly professional!" – Sarah K.
+    </div>
+
+    <div class="testimonial">
+        "Excellent formatting and proofreading service. Very reliable." – Daniel M.
+    </div>
+
+    <hr>
+
+    <h2>Contact Us</h2>
+
+    <form>
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Your Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Your Message</label>
+        <textarea rows="4" placeholder="How can we help you?"></textarea>
+
+        <button type="submit" class="button primary">Send Message</button>
+    </form>
+
+    <hr>
+
+    <h3>Academic Disclaimer</h3>
+    <p style="font-size:14px;">
+        Campus Connect provides academic guidance, editing, proofreading, and research support services. 
+        We do not promote academic dishonesty. All materials provided are intended as study assistance 
+        and reference materials only.
+    </p>
+
 </div>
 
-<!-- FOOTER -->
-<div style="
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-    color:white;
-">
+<footer>
     © 2026 Campus Connect | Academic Support Services
-</div>
+</footer>
 
 </body>
 </html>
