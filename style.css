@@ -62,42 +62,6 @@ header h1 {
     font-size: 40px;
 }
 
-/* ===== LOGO ANIMATION ===== */
-
-.logo {
-    width: 60px;
-    animation: fadeSlide 1.5s ease-out;
-    transition: transform 0.4s ease, filter 0.4s ease;
-}
-
-/* On hover */
-.logo:hover {
-    transform: scale(1.08) rotate(-2deg);
-    filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.7));
-}
-
-/* Entrance animation */
-@keyframes fadeSlide {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.logo {
-    animation: fadeSlide 1.5s ease-out, floatLogo 4s ease-in-out infinite;
-}
-
-@keyframes floatLogo {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0px); }
-}
-
 /* Container */
 .container {
     max-width: 900px;
