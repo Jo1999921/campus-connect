@@ -65,7 +65,7 @@ header h1 {
 /* ===== LOGO ANIMATION ===== */
 
 .logo {
-    width: 120px;
+    width: 60px;
     animation: fadeSlide 1.5s ease-out;
     transition: transform 0.4s ease, filter 0.4s ease;
 }
