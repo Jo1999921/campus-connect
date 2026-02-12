@@ -3,24 +3,35 @@
 <head>
     <title>Campus Connect | Academic Support</title>
     <link rel="stylesheet" href="style.css">
-</head>
 
+    <Google Analytics Placeholder>
+    <384468444>
+
+</head>
 <body>
 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <header>
+    <img src="logo.png" alt="Campus Connect Logo">
     <h1>Campus Connect</h1>
     <p>Your Academic Success Partner</p>
 </header>
 
 <div class="container">
 
+    <h2>Struggling With Assignments?</h2>
 
     <div class="hero-box">
-        Struggling With Assignments?
+        Lost in Reports & Formatting?
     </div>
 
     <p>
-        Campus Connect provides professional academic guidance and support for university students.
+        Professional academic guidance and research support for university students.
     </p>
 
     <div style="text-align:center;">
@@ -31,49 +42,53 @@
 
     <hr>
 
-    <h2>What Students Say</h2>
+    <h2>Testimonials</h2>
 
-    <div class="testimonial">
-        "Campus Connect helped me complete my thesis on time. Highly professional!" – Sarah K.
+    <div class="testimonial">"They helped me finish my thesis on time!" – Sarah K.</div>
+    <div class="testimonial">"Very professional and confidential service." – Daniel M.</div>
+    <div class="testimonial">"Best academic support I've used." – James T.</div>
+
+    <hr>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">Do you guarantee confidentiality?</div>
+        <div class="faq-answer">Yes, all student information is kept strictly confidential.</div>
     </div>
 
-    <div class="testimonial">
-        "Excellent formatting and proofreading service. Very reliable." – Daniel M.
+    <div class="faq-item">
+        <div class="faq-question">Do you promote academic dishonesty?</div>
+        <div class="faq-answer">No. We provide academic guidance and support only.</div>
     </div>
 
     <hr>
 
-    <h2>Contact Us</h2>
+    <h2 id="contact">Contact Us</h2>
 
-<form action="https://formspree.io/f/xpqjppgn" method="POST">
+    <form action="https://formspree.io/f/xpqjppgn" method="POST">
+        <input type="hidden" name="_subject" value="New Campus Connect Inquiry">
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="text" name="_gotcha" style="display:none">
 
-    <!-- Hidden Settings -->
-    <input type="hidden" name="_subject" value="New Campus Connect Inquiry">
-    <input type="hidden" name="_next" value="thankyou.html">
+        <label>Your Name</label>
+        <input type="text" name="name" required>
 
-    <!-- Honeypot Spam Protection -->
-    <input type="text" name="_gotcha" style="display:none">
+        <label>Your Email</label>
+        <input type="email" name="email" required>
 
-    <label>Your Name</label>
-    <input type="text" name="name" required>
+        <label>Your Message</label>
+        <textarea name="message" rows="4" required></textarea>
 
-    <label>Your Email</label>
-    <input type="email" name="email" required>
-
-    <label>Your Message</label>
-    <textarea name="message" rows="4" required></textarea>
-
-    <button type="submit" class="button primary">Send Message</button>
-
-</form>
+        <button type="submit" class="button primary">Send Message</button>
+    </form>
 
     <hr>
 
     <h3>Academic Disclaimer</h3>
     <p style="font-size:14px;">
-        Campus Connect provides academic guidance, editing, proofreading, and research support services. 
-        We do not promote academic dishonesty. All materials provided are intended as study assistance 
-        and reference materials only.
+        Campus Connect provides academic guidance, editing, proofreading, and research support services.
+        All materials are intended for study assistance and reference purposes only.
     </p>
 
 </div>
@@ -82,5 +97,29 @@
     © 2026 Campus Connect | Academic Support Services
 </footer>
 
+<script>
+/* Testimonial Slider */
+let testimonials = document.querySelectorAll(".testimonial");
+let index = 0;
+
+function showTestimonial() {
+    testimonials.forEach(t => t.style.display = "none");
+    testimonials[index].style.display = "block";
+    index = (index + 1) % testimonials.length;
+}
+
+showTestimonial();
+setInterval(showTestimonial, 3000);
+
+/* FAQ Toggle */
+document.querySelectorAll(".faq-question").forEach(item => {
+    item.addEventListener("click", () => {
+        let answer = item.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
+});
+</script>
+
 </body>
 </html>
+
