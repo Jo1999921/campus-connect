@@ -5,10 +5,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+document.querySelectorAll(".faq-question").forEach(item => {
+    item.addEventListener("click", () => {
+        let answer = item.nextElementSibling;
+        answer.style.display =
+            answer.style.display === "block" ? "none" : "block";
+    });
+});
+</script>
+
 <body>
 
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <header>
-    <h1>Campus Connect</h1>
+    <img src="logo.png" alt="Campus Connect Logo" class="logo">
     <p>Your Academic Success Partner</p>
 </header>
 
@@ -40,6 +57,36 @@
     <div class="testimonial">
         "Excellent formatting and proofreading service. Very reliable." – Daniel M.
     </div>
+
+    <hr>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<div class="faq-container">
+
+    <div class="faq-item">
+        <div class="faq-question">Do you guarantee confidentiality?</div>
+        <div class="faq-answer">
+            Yes. All student information and documents remain strictly private.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What services do you provide?</div>
+        <div class="faq-answer">
+            Academic guidance, research support, editing, proofreading,
+            presentation preparation, and consultation.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do payments work?</div>
+        <div class="faq-answer">
+            Once we agree on pricing, you complete secure payment via Stripe.
+        </div>
+    </div>
+
+</div>
 
     <hr>
 
@@ -84,6 +131,3 @@
 
 </body>
 </html>
-
-
-
