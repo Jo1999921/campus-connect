@@ -1,133 +1,444 @@
-<<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Campus Connect | Academic Support</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Connect | Academic Support Services</title>
+  <meta
+    name="description"
+    content="Campus Connect offers academic support services for students in Budapest and Debrecen, including assignments, presentations, proofreading, reports, and thesis guidance."
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<script>
-document.querySelectorAll(".faq-question").forEach(item => {
-    item.addEventListener("click", () => {
-        let answer = item.nextElementSibling;
-        answer.style.display =
-            answer.style.display === "block" ? "none" : "block";
-    });
-});
-</script>
-
 <body>
 
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Campus Connect</a>
 
-<header>
-    <h1>Campus Connect</h1>
-    <p>Your Academic Success Partner</p>
-</header>
-
-<div class="container">
-
-
-    <div class="hero-box">
-        Struggling With Assignments?
+      <nav class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <p>
-        Campus Connect provides professional academic guidance and support for university students.
-    </p>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <p class="hero-tag">Trusted by students in Budapest &amp; Debrecen</p>
 
-    <div style="text-align:center;">
-        <a href="services.html" class="button primary">View Services</a>
-        <a href="https://wa.me/36205105843" class="button whatsapp">WhatsApp</a>
-        <a href="https://instagram.com/campusconnect75" class="button instagram">Instagram</a>
+      <h1>Get Expert Help With Assignments, Presentations &amp; Thesis Work</h1>
+
+      <p class="hero-subtext">
+        Professional academic support that is clear, confidential, and student-focused.
+        Fast turnaround options available for urgent tasks.
+      </p>
+
+      <div class="hero-buttons">
+        <a
+          href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get Help on WhatsApp
+        </a>
+
+        <a
+          href="YOUR_CLICKUP_LINK"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Submit Request
+        </a>
+      </div>
+
+      <div class="hero-links">
+        <a
+          href="https://instagram.com/YOUR_INSTAGRAM_HANDLE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Follow us on Instagram
+        </a>
+        <span>•</span>
+        <a href="#pricing">View Starting Prices</a>
+      </div>
+
+      <p class="hero-note">Limited slots available weekly.</p>
     </div>
+  </section>
 
-    <hr>
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Our Services</h2>
+        <p>
+          Academic support designed to help students save time, improve quality,
+          and reduce stress.
+        </p>
+      </div>
 
-    <h2>What Students Say</h2>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Assignments</h3>
+          <p>
+            Structured academic support for coursework, written tasks, and subject-based projects.
+          </p>
+          <span class="price-tag">From 3,000 HUF</span>
+        </article>
 
-    <div class="testimonial">
-        "Campus Connect helped me complete my thesis on time. Highly professional!" – Sarah K.
+        <article class="service-card">
+          <h3>Presentations</h3>
+          <p>
+            Clean, polished, and easy-to-follow slides for class presentations and seminars.
+          </p>
+          <span class="price-tag">From 4,000 HUF</span>
+        </article>
+
+        <article class="service-card">
+          <h3>Reports</h3>
+          <p>
+            Well-organized academic reports with proper structure, formatting, and clarity.
+          </p>
+          <span class="price-tag">From 5,000 HUF</span>
+        </article>
+
+        <article class="service-card">
+          <h3>Thesis Support</h3>
+          <p>
+            Guidance with research, proposal development, chapter structure, and formatting.
+          </p>
+          <span class="price-tag">From 10,000 HUF</span>
+        </article>
+
+        <article class="service-card">
+          <h3>Proofreading</h3>
+          <p>
+            Review for grammar, clarity, formatting, flow, and presentation quality.
+          </p>
+          <span class="price-tag">From 2,500 HUF</span>
+        </article>
+
+        <article class="service-card">
+          <h3>Academic Guidance</h3>
+          <p>
+            Personalized support for planning, improving, and organizing academic work.
+          </p>
+          <span class="price-tag">Custom Pricing</span>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div class="testimonial">
-        "Excellent formatting and proofreading service. Very reliable." – Daniel M.
-    </div>
+  <!-- WHY CHOOSE US -->
+  <section class="section why-choose-us">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Why Students Choose Campus Connect</h2>
+        <p>
+          We focus on reliability, quality, communication, and a smoother academic experience.
+        </p>
+      </div>
 
-    <hr>
-
-<h2 id="faq">Frequently Asked Questions</h2>
-
-<div class="faq-container">
-
-    <div class="faq-item">
-        <div class="faq-question">Do you guarantee confidentiality?</div>
-        <div class="faq-answer">
-            Yes. All student information and documents remain strictly private.
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>Confidential Support</h3>
+          <p>Your requests are handled privately and respectfully.</p>
         </div>
-    </div>
 
-    <div class="faq-item">
-        <div class="faq-question">What services do you provide?</div>
-        <div class="faq-answer">
-            Academic guidance, research support, editing, proofreading,
-            presentation preparation, and consultation.
+        <div class="benefit-card">
+          <h3>Fast Turnaround</h3>
+          <p>Urgent support may be available for selected tasks.</p>
         </div>
-    </div>
 
-    <div class="faq-item">
-        <div class="faq-question">How do payments work?</div>
-        <div class="faq-answer">
-            Once we agree on pricing, you complete secure payment via Stripe.
+        <div class="benefit-card">
+          <h3>Affordable Pricing</h3>
+          <p>Clear starting prices to make decisions easier.</p>
         </div>
+
+        <div class="benefit-card">
+          <h3>Student-Focused</h3>
+          <p>Support tailored to university-level needs and expectations.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-</div>
+  <!-- PRICING -->
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Starting Prices</h2>
+        <p>
+          Final pricing depends on complexity, deadline, and project scope.
+        </p>
+      </div>
 
-    <hr>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Proofreading</h3>
+          <p class="pricing-amount">From 2,500 HUF</p>
+          <p>Grammar, structure, clarity, and formatting review.</p>
+        </div>
 
-    <h2>Contact Us</h2>
+        <div class="pricing-card featured-pricing">
+          <h3>Assignments</h3>
+          <p class="pricing-amount">From 3,000 HUF</p>
+          <p>Coursework support for academic tasks and submissions.</p>
+        </div>
 
-<form action="https://formspree.io/f/xpqjppgn" method="POST">
+        <div class="pricing-card">
+          <h3>Presentations</h3>
+          <p class="pricing-amount">From 4,000 HUF</p>
+          <p>Professional slides for class, project, or defense use.</p>
+        </div>
 
-    <!-- Hidden Settings -->
-    <input type="hidden" name="_subject" value="New Campus Connect Inquiry">
-    <input type="hidden" name="_next" value="thankyou.html">
+        <div class="pricing-card">
+          <h3>Reports</h3>
+          <p class="pricing-amount">From 5,000 HUF</p>
+          <p>Structured reports with cleaner presentation and organization.</p>
+        </div>
 
-    <!-- Honeypot Spam Protection -->
-    <input type="text" name="_gotcha" style="display:none">
+        <div class="pricing-card">
+          <h3>Thesis Support</h3>
+          <p class="pricing-amount">From 10,000 HUF</p>
+          <p>Support for proposals, chapters, formatting, and review.</p>
+        </div>
 
-    <label>Your Name</label>
-    <input type="text" name="name" required>
+        <div class="pricing-card">
+          <h3>Custom Projects</h3>
+          <p class="pricing-amount">Request Quote</p>
+          <p>For larger or more specific academic support needs.</p>
+        </div>
+      </div>
 
-    <label>Your Email</label>
-    <input type="email" name="email" required>
+      <div class="pricing-actions">
+        <a
+          href="YOUR_CLICKUP_LINK"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Full Price List / Submit Request
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <label>Your Message</label>
-    <textarea name="message" rows="4" required></textarea>
+  <!-- REQUEST SECTION -->
+  <section class="section request-section">
+    <div class="container request-box">
+      <h2>Need Help With a Specific Task?</h2>
+      <p>
+        Send your details through ClickUp for a more organized request, or message directly on WhatsApp for faster response.
+      </p>
 
-    <button type="submit" class="button primary">Send Message</button>
+      <div class="hero-buttons">
+        <a
+          href="YOUR_CLICKUP_LINK"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Submit Request via ClickUp
+        </a>
 
-</form>
+        <a
+          href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <hr>
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-heading">
+        <h2>What Students Say</h2>
+        <p>
+          Clear, believable feedback helps build trust. Keep this section honest and realistic.
+        </p>
+      </div>
 
-    <h3>Academic Disclaimer</h3>
-    <p style="font-size:14px;">
-        Campus Connect provides academic guidance, editing, proofreading, and research support services. 
-        We do not promote academic dishonesty. All materials provided are intended as study assistance 
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p>
+            “Campus Connect helped me complete my thesis on time. The support was professional and reliable.”
+          </p>
+          <h4>Sarah K.</h4>
+          <span>Debrecen</span>
+        </article>
+
+        <article class="testimonial-card">
+          <p>
+            “Excellent formatting and proofreading service. Fast communication and quality work.”
+          </p>
+          <h4>Daniel M.</h4>
+          <span>Budapest</span>
+        </article>
+
+        <article class="testimonial-card">
+          <p>
+            “My presentation looked much better and I felt more confident submitting it.”
+          </p>
+          <h4>Anna T.</h4>
+          <span>University Student</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answer the questions students usually ask before they message you.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Is my work confidential?</h3>
+          <p>
+            Yes. All requests are handled with privacy and confidentiality.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What services do you provide?</h3>
+          <p>
+            We provide support for assignments, reports, presentations, proofreading,
+            thesis-related guidance, and other academic tasks.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do payments work?</h3>
+          <p>
+            Pricing is discussed clearly before any work begins, based on the type
+            of service and deadline.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How fast can I get help?</h3>
+          <p>
+            Delivery time depends on the task, but urgent support may be available
+            for selected requests.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Contact Us</h2>
+        <p>
+          Choose the easiest way to reach us. WhatsApp is best for fast replies.
+        </p>
+      </div>
+
+      <div class="contact-actions">
+        <a
+          href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="YOUR_CLICKUP_LINK"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Submit Request
+        </a>
+
+        <a
+          href="https://instagram.com/YOUR_INSTAGRAM_HANDLE"
+          class="btn btn-instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <p class="contact-email">
+        Email:
+        <a href="mailto:youremail@example.com">youremail@example.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section class="section disclaimer">
+    <div class="container">
+      <h2>Academic Disclaimer</h2>
+      <p>
+        Campus Connect provides academic guidance, editing, proofreading, and research support services.
+        We do not promote academic dishonesty. All materials provided are intended as study assistance
         and reference materials only.
-    </p>
+      </p>
+    </div>
+  </section>
 
-</div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Campus Connect | Academic Support Services</p>
 
-<footer>
-    © 2026 Campus Connect | Academic Support Services
-</footer>
+      <div class="footer-links">
+        <a
+          href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+        <a
+          href="YOUR_CLICKUP_LINK"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ClickUp
+        </a>
+        <a
+          href="https://instagram.com/YOUR_INSTAGRAM_HANDLE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
